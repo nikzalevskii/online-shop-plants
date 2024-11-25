@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-  api: 'http://zolich.ru/api/',
-  serverStaticPath: 'http://zolich.ru/images/products/',
+  api: 'https://zolich.ru/api/',
+  serverStaticPath: 'https://zolich.ru/images/products/',
 };
