@@ -7,8 +7,8 @@ export class ActiveParamsUtil {
 
     const activeParams: ActiveParamsType = {types: []};
     if (params.hasOwnProperty(TYPES)) {
-      // activeParams.types = Array.isArray(params[TYPES]) ? params[TYPES] : [params[TYPES]];
-      activeParams.types = params[TYPES];
+      activeParams.types = Array.isArray(params[TYPES]) ? params[TYPES] : [params[TYPES]];
+      // activeParams.types = params[TYPES];
     }
     if (params.hasOwnProperty(HEIGHT_FROM)) {
       activeParams.heightFrom = params[HEIGHT_FROM];

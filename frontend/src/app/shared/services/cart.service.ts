@@ -37,8 +37,7 @@ export class CartService {
         })
       )
   }
-
-  updateCart(productId: string, quantity: number): Observable<CartType | DefaultResponseType> {
+   updateCart(productId: string, quantity: number): Observable<CartType | DefaultResponseType> {
     return this.http.post<CartType | DefaultResponseType>(environment.api + 'cart', {
       productId,
       quantity
